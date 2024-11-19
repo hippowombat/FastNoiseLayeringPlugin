@@ -115,7 +115,7 @@ class FASTNOISELAYERINGPLUGIN_API UFastNoiseLayeringFunctions : public UBlueprin
 public:
 
 	UFUNCTION(BlueprintPure, Category = "GSFNG Statics")
-	static float BlendNoises(FVector Position, FVector CenterPosition, UPARAM(ref) TArray<UFastNoiseWrapper*>& NoiseWrappers, UPARAM(ref) TArray<FFN_NoiseLayerType>& NoiseLayers);
+	static float BlendNoises(FVector Position, UPARAM(ref) TArray<UFastNoiseWrapper*>& NoiseWrappers, UPARAM(ref) TArray<FFN_NoiseLayerType>& NoiseLayers);
 
 	UFUNCTION(BlueprintPure, Category = "GSFNG Statics")
 	static float BlendNoises3D(FVector Position, UPARAM(ref) TArray<UFastNoiseWrapper*>& NoiseWrappers, UPARAM(ref) TArray<FFN_NoiseLayerType>& NoiseLayers);

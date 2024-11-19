@@ -4,7 +4,7 @@
 #include "FastNoiseLayeringFunctions.h"
 #include "Math/UnrealMathUtility.h"
 
-float UFastNoiseLayeringFunctions::BlendNoises(FVector Position, FVector CenterPosition, TArray<UFastNoiseWrapper*>& NoiseWrappers,
+float UFastNoiseLayeringFunctions::BlendNoises(FVector Position, TArray<UFastNoiseWrapper*>& NoiseWrappers,
 	TArray<FFN_NoiseLayerType>& NoiseLayers)
 {
 	float NoiseBlendOutput = 0.0f;
