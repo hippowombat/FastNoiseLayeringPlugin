@@ -1,8 +1,14 @@
-Requirements:
+# Requirements:
 
 Rockam's FastNoiseWrapper plugin, available here https://github.com/Rockam/FastNoise-UE4-Wrapper
 
+# Description
+
 A simple function library for mathematically blending layers of noise generated from Rockam's UE4 implementation of Auburn's Fast Noise library.
+
+# Usage
+
+## Blueprints
 
 Before blending noises, call the Init Noise Wrappers function. The Noise Wrappers input pin (array of FastNoiseWrapper objects) should be a function-local variable, while Noise Layers can/should be an Actor/Class variable that you can edit via the Details panel.
 
@@ -15,6 +21,8 @@ Blend Noises functions step through Noise Layers array in order, performing the 
 For example, a Noise Layers array with entry 1 set to Subtract will subtract the noise value at the supplied position from the noise value at the supplied position from entry 0.
 
 ![NoiseLayering](https://github.com/user-attachments/assets/06de3310-5144-48d1-ab4f-ea5d03ab7876)
+
+## C++
 
 The same functions/FFN_NoiseLayerType struct type can be exposed to C++ by including FastNoiseLayeringFunctions.h in your class's header file.
 
